@@ -79,6 +79,9 @@ TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := true
 TARGET_USES_C2D_COMPOSITON := true
 
+#/system/lib/libmmjpeg.so: has text relocations --->qcamera-daemon fix
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+
 #Use AOSP browser
 TARGET_USES_AOSP_BROWSER := true
 
